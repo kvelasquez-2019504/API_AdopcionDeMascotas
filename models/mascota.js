@@ -13,15 +13,15 @@ const MascotasSchema = Schema({
         default:"----"
     },
     edad:{
-        type:BigInt,
+        type:String,
         required:[true,"La edad de tu mascota es obligatoria"]
     },
     peso:{
-        type:Number,
+        type:String,
         required:[true,"El peso de tu mascota es obligatorio"]
     },
     altura:{
-        type:Number,
+        type:STring,
         required:[true,"La altura de tu mascota es obligatoria"]
     },
     estado:{

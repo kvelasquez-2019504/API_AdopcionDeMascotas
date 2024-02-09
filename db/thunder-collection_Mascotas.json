@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Mascotas",
+    "dateExported": "2024-02-09T17:52:21.160Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "231e077f-1415-41f7-8d81-7ccbac113384",
+            "colId": "d134b1b3-5887-4860-9d57-72ea558c5f71",
+            "containerId": "",
+            "name": "mascotasGet",
+            "url": "http://localhost:3000/api/mascotas",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-02-09T16:07:56.841Z",
+            "modified": "2024-02-09T16:08:22.481Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "42a56dd2-6637-48c8-8b39-8a3d3b9461c5",
+            "colId": "d134b1b3-5887-4860-9d57-72ea558c5f71",
+            "containerId": "",
+            "name": "mascotasPost",
+            "url": "http://localhost:3000/api/mascotas",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-09T16:31:32.500Z",
+            "modified": "2024-02-09T16:45:23.188Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Messi\",\n  \"tipo\":\"Perro\",\n  \"raza\":\"French Poodle\",\n  \"edad\": \"3 años\",\n  \"peso\":\"29.15lb\",\n  \"altura\":\"95cm\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "57f00cd4-94b6-484f-b680-2c8ff903ccaa",
+            "colId": "d134b1b3-5887-4860-9d57-72ea558c5f71",
+            "containerId": "",
+            "name": "mascotasGetById",
+            "url": "http://localhost:3000/api/mascotas/65c6568041eae82d9a43c347",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-02-09T17:09:46.475Z",
+            "modified": "2024-02-09T17:10:15.432Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ac842305-a534-4085-a623-16023933b147",
+            "colId": "d134b1b3-5887-4860-9d57-72ea558c5f71",
+            "containerId": "",
+            "name": "mascotasPut",
+            "url": "http://localhost:3000/api/mascotas/65c6568041eae82d9a43c347",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-02-09T17:16:35.096Z",
+            "modified": "2024-02-09T17:31:06.570Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Jacky\",\n  \"edad\":\"4 años\",\n  \"peso\":\"25lb\",\n  \"altura\":\"115cm\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2faf079d-6335-4204-8fba-fb70e9868bd9",
+            "colId": "d134b1b3-5887-4860-9d57-72ea558c5f71",
+            "containerId": "",
+            "name": "mascotasDelete",
+            "url": "http://localhost:3000/api/mascotas/65c6568041eae82d9a43c347",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-02-09T17:46:05.172Z",
+            "modified": "2024-02-09T17:46:23.959Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

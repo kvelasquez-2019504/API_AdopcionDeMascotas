@@ -1,5 +1,5 @@
-const {Schema,module}=require("mongoose");
-const MascotaSchema = Schema[{
+const {Schema,model}=require("mongoose");
+const MascotasSchema = Schema({
     nombre:{
         type:String,
         required:[true,"El nombre de tu mascota es obligatorio"]
@@ -9,23 +9,24 @@ const MascotaSchema = Schema[{
         required:[true, "El tipo de mascota es obligatorio"]
     },
     raza:{
-        type:String
+        type:String,
+        default:"----"
     },
     edad:{
-        type:Integer,
+        type:BigInt,
         required:[true,"La edad de tu mascota es obligatoria"]
     },
     peso:{
-        type:Double,
+        type:Number,
         required:[true,"El peso de tu mascota es obligatorio"]
     },
     altura:{
-        type:Double,
+        type:Number,
         required:[true,"La altura de tu mascota es obligatoria"]
     },
     estado:{
         type:Boolean,
         default:true
     }
-}];
-module.exports=model('Mascota',MascotaSchema);
+});
+module.exports=model('Mascota',MascotasSchema);

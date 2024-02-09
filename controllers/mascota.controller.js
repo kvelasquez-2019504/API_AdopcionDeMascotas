@@ -15,6 +15,16 @@ const mascotasGet=async (req,res=response)=>{
     });
 }
 
+const mascotasPost =async (req,res)=>{
+    const {nombre,tipo,raza,edad,peso,altura}=req.body;
+    const mascota = new Mascota({nombre,tipo,raza,edad,peso,altura});
+    await mascota.save();
+    res.status(200).json({
+        mascota
+    });
+}
+
 module.exports = {
-    mascotasGet
+    mascotasGet,
+    mascotasPost
 }

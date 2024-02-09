@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Usuarios",
+    "dateExported": "2024-02-09T00:56:53.747Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "13f8c39a-408e-40db-aa00-464c9a37018f",
+            "colId": "b030f384-c33d-4084-b686-7c7f38d240ba",
+            "containerId": "",
+            "name": "usuariosPost",
+            "url": "http://localhost:3000/api/usuarios",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-08T23:18:33.998Z",
+            "modified": "2024-02-09T00:34:00.872Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[\n  {\n    \"nombre\": \"Kenneth Velásquez\",\n    \"correo\": \"kvelasquez@gmail.com\",\n    \"password\": \"123456\",\n    \"role\": \"ADMIN_ROLE\"\n  },\n  {\n    \"nombre\": \"Bryan Rodríguez\",\n    \"correo\": \"brodriguez@gmail.com\",\n    \"password\": \"654321\",\n    \"role\": \"ADMIN_ROLE\"\n  }\n]",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ee9366d1-a107-406b-887a-cedcfa30a9ed",
+            "colId": "b030f384-c33d-4084-b686-7c7f38d240ba",
+            "containerId": "",
+            "name": "usuariosGet",
+            "url": "http://localhost:3000/api/usuarios",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-08T23:18:43.374Z",
+            "modified": "2024-02-09T00:32:41.638Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e426b19e-e1bf-40ac-805c-bb44100f3b50",
+            "colId": "b030f384-c33d-4084-b686-7c7f38d240ba",
+            "containerId": "",
+            "name": "usuariosGetById",
+            "url": "http://localhost:3000/api/usuarios/65c572dea0b5195abf4a70d9",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-02-08T23:19:00.141Z",
+            "modified": "2024-02-09T00:34:45.761Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "895e92b0-0083-4b48-8408-d14df6ec601b",
+            "colId": "b030f384-c33d-4084-b686-7c7f38d240ba",
+            "containerId": "",
+            "name": "usuariosPut",
+            "url": "http://localhost:3000/api/usuarios/65c572dea0b5195abf4a70d9",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-02-08T23:19:06.702Z",
+            "modified": "2024-02-09T00:35:44.183Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Stephan Cardenas\",\n  \"correo\":\"scardenas@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b5f9e5b2-92f1-482d-b7a1-1c6f0285a84c",
+            "colId": "b030f384-c33d-4084-b686-7c7f38d240ba",
+            "containerId": "",
+            "name": "usuariosDelete",
+            "url": "http://localhost:3000/api/usuarios/65c572dea0b5195abf4a70d9",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-02-08T23:19:32.947Z",
+            "modified": "2024-02-09T00:36:19.066Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

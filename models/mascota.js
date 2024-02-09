@@ -21,7 +21,7 @@ const MascotasSchema = Schema({
         required:[true,"El peso de tu mascota es obligatorio"]
     },
     altura:{
-        type:STring,
+        type:String,
         required:[true,"La altura de tu mascota es obligatoria"]
     },
     estado:{

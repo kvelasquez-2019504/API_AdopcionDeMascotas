@@ -11,6 +11,10 @@ const MascotaSchema = Schema[{
     edad:{
         type:Integer,
         required:[true,"La edad es obligatoria"]
+    },
+    estado:{
+        type:Boolean,
+        default:true
     }
 }];
 module.exports=model('Mascota',MascotaSchema);
